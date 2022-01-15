@@ -1,0 +1,132 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% https://bibdesk.sourceforge.io/
+
+%% Created for 立岩斉明 at 2022-01-04 22:34:28 +0900 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@article{TANAKA2021103265,
+	abstract = {Map matching is an essential preprocessing step for most trajectory-based intelligent transport system services. Due to device capability constraints and the lack of a high-performance model, map matching for low-sampling-rate trajectories is of particular interest. Therefore, we developed a time-expanded graph matching (TEG-matching) that has three advantages (1) high speed and accuracy, as it is robust for spatial measurement error and a pause such as at traffic lights; (2) being parameter-free, that is, our algorithm has no predetermined hyperparameters; and (3) only requiring ordered locations for map matching. Given a set of low-frequency GPS data, we construct a time-expanded graph (TEG) whose path from source to sink represents a candidate route. We find the shortest path on TEG to obtain the matching route with a small area between the vehicle trajectory. Additionally, we introduce two general speedup techniques (most map matching methods can apply) bottom-up segmentation and fractional cascading. Numerical experiments with worldwide vehicle trajectories in a public dataset show that TEG-matching outperforms state-of-the-art algorithms in terms of accuracy and speed, and we verify the effectiveness of the two general speedup techniques.},
+	author = {Akira Tanaka and Nariaki Tateiwa and Nozomi Hata and Akihiro Yoshida and Takashi Wakamatsu and Shota Osafune and Katsuki Fujisawa},
+	doi = {https://doi.org/10.1016/j.trc.2021.103265},
+	issn = {0968-090X},
+	journal = {Transportation Research Part C: Emerging Technologies},
+	keywords = {Offline map matching, Time-expanded graph, Neighborhood search analysis, Fractional cascading, Bottom-up segmentation},
+	pages = {103265},
+	title = {Offline map matching using time-expanded graph for low-frequency data},
+	url = {https://www.sciencedirect.com/science/article/pii/S0968090X21002771},
+	volume = {130},
+	year = {2021},
+	bdsk-url-1 = {https://www.sciencedirect.com/science/article/pii/S0968090X21002771},
+	bdsk-url-2 = {https://doi.org/10.1016/j.trc.2021.103265}}
+
+@article{yoshida2020new,
+	abstract = {The studies of browsing behavior have gained increasing attention in web analysis for providing better service. Most of the conventional approaches focus on simple indices such as average dwell time and conversion rate. These indices make similar evaluations to websites even if their features are significantly different. Moreover, such statistical indices are not sensitive to the dynamics of users'interests. In this paper, we propose a new framework for measuring a website's attractiveness that takes into account both the distribution and dynamics of users'interests. Within the framework, we define a new index for the website, called Attractiveness Factor, which evaluates the degree of users'attention. It consists of three procedures: First, we capture the transition of users'interests during browsing by solving a nonnegative matrix factorization and constrained network flow problems. To accommodate multiple types of interests of a user, we applied a soft clustering as opposed to a hard clustering to model attributes of users and websites. Second, for each website, the feature of each cluster is obtained by fitting the dwell time distribution with Weibull distribution. Finally, we calculate Attractiveness Factor of a website by applying the results of clustering and fitting. Attractiveness Factor depends on the distribution of the dwell time of users interested in the website, which reflects the change of interest of users. Numerical experiments with real web access data of Yahoo Japan News are conducted by solving extremely large-scale optimization problems. They show that Attractiveness Factor captures more exceptional information about browsing behavior more effectively than well-used indices. Attractive factors give low ratings to category pages; however, it can assign high ratings to websites that attract many people, such as hot topic news about the 2018 FIFA World Cup, Japan's new imperial era'REIWA,'and North Korea---the United States Hanoi Summit. Moreover, we demonstrate that Attractiveness Factor can detect the tendency of users'attention to each website at a given time interval of the day.},
+	author = {Yoshida, Akihiro and Higurashi, Tatsuru and Maruishi, Masaki and Tateiwa, Nariaki and Hata, Nozomi and Tanaka, Akira and Wakamatsu, Takashi and Nagamatsu, Kenichi and Tajima, Akira and Fujisawa, Katsuki},
+	date = {2020/03/01},
+	date-added = {2022-01-04 21:42:45 +0900},
+	date-modified = {2022-01-04 21:42:45 +0900},
+	doi = {10.1007/s41019-019-00112-1},
+	id = {Yoshida2020},
+	isbn = {2364-1541},
+	journal = {Data Science and Engineering},
+	number = {1},
+	pages = {48--64},
+	title = {New Performance Index ``Attractiveness Factor''for Evaluating Websites via Obtaining Transition of Users'Interests},
+	url = {https://doi.org/10.1007/s41019-019-00112-1},
+	volume = {5},
+	year = {2020},
+	bdsk-url-1 = {https://doi.org/10.1007/s41019-019-00112-1}}
+
+@inproceedings{tateiwa2020massive,
+	abstract = {Lattice-based cryptography has received attention as a next-generation encryption technique, because it is believed to be secure against attacks by classical and quantum computers. Its essential security depends on the hardness of solving the shortest vector problem (SVP). In the cryptography, to determine security levels, it is becoming significantly more important to estimate the hardness of the SVP by high-performance computing. In this study, we develop the world's first distributed and asynchronous parallel SVP solver, the MAssively Parallel solver for SVP (MAP-SVP). It can parallelize algorithms for solving the SVP by applying the Ubiquity Generator framework, which is a generic framework for branch-and-bound algorithms. The MAP-SVP is suitable for massive-scale parallelization, owing to its small memory footprint, low communication overhead, and rapid checkpoint and restart mechanisms. We demonstrate its performance and scalability of the MAP-SVP by using up to 100,032 cores to solve instances of the Darmstadt SVP Challenge.},
+	articleno = {60},
+	author = {Tateiwa, Nariaki and Shinano, Yuji and Nakamura, Satoshi and Yoshida, Akihiro and Kaji, Shizuo and Yasuda, Masaya and Fujisawa, Katsuki},
+	booktitle = {SC20: sProceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis},
+	date-modified = {2022-01-04 21:50:35 +0900},
+	isbn = {9781728199986},
+	keywords = {deepBKZ, parallel computation, lattice based cryptography, shortest vector problem, ENUM, ubiquity generator framework},
+	location = {Atlanta, Georgia},
+	numpages = {15},
+	publisher = {IEEE Press},
+	series = {SC '20},
+	title = {Massive Parallelization for Finding Shortest Lattice Vectors Based on Ubiquity Generator Framework},
+	year = {2020}}
+
+@inproceedings{tateiwa2022config,
+	author = {Tateiwa, Nariaki and Shinano, Yuji and Yamamura, Keichiro and Yoshida, Akihiro and Kaji, Shizuo and Yasuda, Masaya and Fujisawa, Katsuki},
+	booktitle = {HiPC28: IEEE 28th International Conference on High Performance Computing, Data, and Analytics},
+	title = {CMAP-LAP: Configurable Massively Parallel Solver for Lattice Problems},
+	year = {2021}}
+
+@inproceedings{nakamura2021solving,
+	abstract = {The learning with errors (LWE) problem assures the security of modern lattice-based cryptosystems. It can be reduced to classical lattice problems such as the shortest vector problem (SVP) and the closest vector problem (CVP). In particular, the search-LWE problem is reduced to a particular case of SVP by Kannan{\textquoteright}s embedding technique. Lattice basis reduction is a mandatory tool to solve lattice problems. In this paper, we give a new strategy to solve the search-LWE problem by lattice reduction over projected bases. Compared with a conventional method of reducing a whole lattice basis, our strategy reduces only a part of the basis and, hence, it gives a practical speed-up in solving the problem. We also develop a reduction algorithm for a projected basis, and apply it to solving several instances in the LWE challenge, which has been initiated since the middle of 2016 in order to assess the hardness of the LWE problem.},
+	address = {Germany},
+	author = {Satoshi Nakamura and Nariaki Tateiwa and Koha Kinjo and Yasuhiko Ikematsu and Masaya Yasuda and Katsuki Fujisawa},
+	booktitle = {Proceedings of the Sixth International Conference on Mathematics and Computing - ICMC 2020},
+	doi = {10.1007/978-981-15-8061-1_3},
+	isbn = {9789811580604},
+	language = {English},
+	pages = {29--42},
+	publisher = {Springer Science and Business Media Deutschland GmbH},
+	series = {Advances in Intelligent Systems and Computing},
+	title = {Solving the Search-LWE Problem by Lattice Reduction over Projected Bases},
+	year = {2021},
+	bdsk-url-1 = {https://doi.org/10.1007/978-981-15-8061-1_3}}
+
+@inproceedings{yoshida2019practical,
+	author = {Yoshida, Akihiro and Yatsushiro, Yosuke and Hata, Nozomi and Higurashi, Tatsuru and Tateiwa, Nariaki and Wakamatsu, Takashi and Tanaka, Akira and Nagamatsu, Kenichi and Fujisawa, Katsuki},
+	booktitle = {2019 IEEE International Conference on Big Data (Big Data)},
+	organization = {IEEE},
+	pages = {1251--1258},
+	title = {Practical end-to-end repositioning algorithm for managing bike-sharing system},
+	year = {2019}}
+
+@inproceedings{hata2018mobility,
+	author = {Hata, Nozomi and Nakayama, Takashi and Tanaka, Akira and Wakamatsu, Takashi and Yoshida, Akihiro and Tateiwa, Nariaki and Nishikawa, Yuri and Ozawa, Jun and Fujisawa, Katsuki},
+	booktitle = {2018 IEEE International Conference on Big Data (Big Data)},
+	organization = {IEEE},
+	pages = {4026--4035},
+	title = {Mobility Optimization on Cyber Physical System via Multiple Object Tracking and Mathematical Programming},
+	year = {2018}}
+
+@article{tateiwa2018hybrid,
+	author = {Tateiwa, Nariaki and Hata, Nozomi and Tanaka, Akira and Nakayama, Takashi and Yoshida, Akihiro and Wakamatsu, Takashi and Fujisawa, Katsuki},
+	journal = {IFAC-PapersOnLine},
+	number = {31},
+	pages = {201--206},
+	publisher = {Elsevier},
+	title = {Hybrid Vehicle Control and Optimization with a New Mathematical Method},
+	volume = {51},
+	year = {2018}}
+
+@inproceedings{tanaka2017practical,
+	author = {Tanaka, Akira and Hata, Nozomi and Tateiwa, Nariaki and Fujisawa, Katsuki},
+	booktitle = {2017 IEEE International Conference on Big Data (Big Data)},
+	doi = {10.1109/BigData.2017.8258322},
+	organization = {IEEE},
+	pages = {3368--3377},
+	title = {Practical approach to evacuation planning via network flow and deep learning},
+	year = {2017},
+	bdsk-url-1 = {https://doi.org/10.1109/BigData.2017.8258322}}
+
+@techreport{CMAPLAP.2021,
+	address = {Takustr. 7, 14195 Berlin},
+	author = {Nariaki Tateiwa and Yuji Shinano and Keiichiro Yamamura and Akihiro Yoshida and Shizuo Kaji and Masaya Yasuda and Katsuki Fujisawa},
+	institution = {ZIB},
+	language = {eng},
+	number = {21-16},
+	title = {CMAP-LAP: Configurable Massively Parallel Solver for Lattice Problems},
+	year = {2021}}
+
+@techreport{CMAPDeepBKZ.2021,
+	address = {Takustr. 7, 14195 Berlin},
+	author = {Nariaki Tateiwa and Yuji Shinano and Masaya Yasuda and Shizuo Kaji and Keiichiro Yamamura and Katsuki Fujisawa},
+	institution = {ZIB},
+	language = {eng},
+	number = {21-38},
+	title = {Massively parallel sharing lattice basis reduction},
+	year = {2021}}

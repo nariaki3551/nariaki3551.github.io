@@ -1,0 +1,135 @@
+/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+pre {
+  width: 70vw;
+  border-radius: 7px; /* 半径が7pxの角丸 */
+  overflow: scroll; /* はみ出した文字を枠の中でスクロールさせる */
+  padding-right: 15px;
+  margin: 30px auto;
+  padding-left: 200px;
+}
+/* 画面幅が1200px以下の時 */
+@media screen and (max-width: 1200px) {
+  pre {
+  margin: 30px auto;
+  }
+}
+.prettyprint {
+  background: #2d2d2d;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  border: 0 !important;
+}
+
+.pln {
+  color: hsl(0, 0%, 80%);
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 15px;/* 上下の余白  */
+  margin-bottom: 15px;
+  color: #999999;
+  background-color: #2d2d2d;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  padding-left: 1em;
+  border-left: solid 1px #999999; /* 区切り線を表示  */
+  background-color: #2d2d2d; /* 番号の背景を指定  */
+  list-style-type: decimal; /* 1行ごとに行番号を表示 */ 
+}
+
+@media screen {
+
+  /* string content */
+
+  .str {
+    color: #99cc99;
+  }
+
+  /* keyword */
+
+  .kwd {
+    color: #cc99cc;
+  }
+
+  /* comment */
+
+  .com {
+    color: #999999;
+  }
+
+  /* type name */
+
+  .typ {
+    color: #6699cc;
+  }
+
+  /* literal value */
+
+  .lit {
+    color: #f99157;
+  }
+
+  /* punctuation */
+
+  .pun {
+    color: #cccccc;
+  }
+
+  /* lisp open bracket */
+
+  .opn {
+    color: #cccccc;
+  }
+
+  /* lisp close bracket */
+
+  .clo {
+    color: #cccccc;
+  }
+
+  /* markup tag name */
+
+  .tag {
+    color: #f2777a;
+  }
+
+  /* markup attribute name */
+
+  .atn {
+    color: #f99157;
+  }
+
+  /* markup attribute value */
+
+  .atv {
+    color: #66cccc;
+  }
+
+  /* declaration */
+
+  .dec {
+    color: #f99157;
+  }
+
+  /* variable name */
+
+  .var {
+    color: #f2777a;
+  }
+
+  /* function name */
+
+  .fun {
+    color: #6699cc;
+  }
+}

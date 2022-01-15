@@ -1,0 +1,303 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff;
+}
+body {
+  font-size: 14px;
+  -webkit-size-: 100%;
+  font-family: "Helvetica Neue", "Helvetica", "ヒラギノ角ゴシック",
+    "Hiragino Sans", "Segoe UI", "Yu Gothic UI", "Meiryo", "メイリオ",
+    sans-serif;
+}
+h1 {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  margin: auto;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-decoration: none; /* リンクの下線を消す */
+  color: #000;
+}
+h2 {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  margin: auto;
+  font-weight: normal;
+  letter-spacing: 3px;
+  text-decoration: none; /* リンクの下線を消す */
+  color: #000;
+}
+.centering_parent {
+  position: absolute;
+  top: 50%; /* 親要素の半分下にずらす */
+  left: 50%; /* 親要素の半分右にずらす */
+  transform: translateY(-50%) translateX(-50%); /* 要素自体の半分、上と左にずらす */
+  padding: 20px 20px 20px 200px; /* 余白指定 */
+}
+h3 {
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin: 0px 30px 0 30px;
+  letter-spacing: 2px;
+}
+h3::after {
+  content: "";
+  display: block;
+  border-bottom: solid 3px #000;
+  position: relative;
+  width: 300px;
+  margin: 5px auto;
+}
+h4 {
+  font-size: 19.8px;
+  font-weight: bold;
+  text-align: start;
+  position: relative;
+  margin: 20px 0px 10px 0px;
+  letter-spacing: 1px;
+}
+#header {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+  box-shadow:#778899 0 0 8px 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+/* ナビゲーションバー */
+#menu {
+  position: fixed;
+  top: 0;
+  margin: 0; /*余白が入らないように*/
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  background-color: #98a8b8;
+  padding: 0px;
+  z-index: 3;
+  /* 画面サイズ1200px以上に変化した時の動き設定 */
+  transition: transform 250ms ease-in-out; /* プロパティ名 | 時間 | イージング関数 */
+}
+.menu-inner {
+  margin: 100px auto;
+  padding: 0;
+  text-transform: capitalize;
+}
+.menu-item {
+  font-weight: bold;
+  padding: 10px 0px;
+  letter-spacing: 2px;
+  margin: 0;
+  list-style: none;
+  font-size: 19.8px;
+  cursor: pointer; /* カーソルの種類 */
+}
+.menu-item:hover { /* カーソルが重なった時のアニメーション */
+  font-size: 24px;
+  transition: font-size 0.25s;
+}
+.clear { /* ナビゲーションバーの文字設定 */
+  text-decoration: none; /* リンクの下線を消す */
+  color: #fff;
+}
+.language { /* 言語切り替えの文字設定 */
+  font-weight: bold;
+  color: #fff;
+}
+/* コンテンツ */
+#main {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 100px 0 100px 200px;
+  padding: 30px 70px 200px; /* 上 | 左右 | 下 */
+}
+.itemize {
+  margin-left: 30px;
+}
+.breake-all {
+  word-break: break-all; /* 長いURLを改行する */
+}
+/* スライドショー設定 */
+.slideshow {
+  width: 250px; /* スライドショーのサイズ */
+  height: 250px;
+  margin: 10px 0;
+  overflow: hidden; /* 指定した幅以外を非表示にする */
+}
+#slideshow_image{
+  width: 100%; 
+  /* opacity: 0;
+  transition:all 0.4s ease-in-out;  */
+}
+#footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+  width: 100%;
+  height: 0px;
+}
+/* Homeの写真横に文章を並べるための処理 */
+.inline-block-text {
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: top;
+  padding: 10px 10px 0px; /* 上 | 左右 | 下 */
+}
+/* 画面幅が1200px以下の時 */
+@media screen and (max-width: 1200px) {
+  #main {
+    margin: 100px auto;
+    padding: 30px 70px ;
+  }
+  h3::after {
+    width: 50vw;
+    max-width: 300px;
+  }
+  .centering_parent {
+    padding: 20px; /* 余白指定 */
+  }
+  .slideshow {
+    width: 25vw; /* スライドショーのサイズ */
+    height: 25vw;
+  }
+  #menu {
+    transform: translateX(-200px); /* ナビゲーションバーがひっこむ設定 */
+    transition: transform 250ms ease-in-out; /* プロパティ名 | 時間 | イージング関数 */
+    opacity: 1; /* 透明にする */
+  }
+  .menu-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #555;
+    transform: translateX(-100%); /* ひっこむ設定 */
+    transition: transform 150ms ease-in-out; /* プロパティ名 | 時間 | イージング関数 */
+    opacity: 0.7; /* 半透明にする */
+    z-index: 2;
+    display: none;
+  }
+  /* 折り畳みスイッチ ~#が開く先*/
+  input[type="checkbox"]:checked ~ #menu {
+    transform: translateX(0); /* X方向に移動（０位置に戻る） */
+    opacity: 1; /* 透明度戻す */
+  }
+  input[type="checkbox"]:checked ~ .menu-background {
+    transform: translateX(0); /* X方向に移動（０位置に戻る） */
+    display: block;
+  }
+  input[type="checkbox"] {
+    transition: all 0.3s; /* 変化する全てのプロパティへの適用｜時間 */
+    box-sizing: border-box; /* 要素に指定した範囲内に納める処理 */
+    display: none; /* 表示しない処理 */
+  }
+  /* アニメーションアイコン */
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+  }
+  /* アイコンの造形 */
+  .spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #778899;
+  }
+  /* アイコン上 */
+  .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+  }
+  /* アイコン中 */
+  .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  /* アイコン下 */
+  .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+  }
+  /* 開いた時のアイコン中 */
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0; /* 透明にする */
+    background-color: #fff;
+  }
+  /* 開いた時のアイコン上 */
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+    background-color: #fff;
+  }
+  /* 開いた時のアイコン下 */
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+    background-color: #fff;
+  }
+}
+/* 画面幅が700px以下の時 */
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: clamp(18px, 2.5vw, 21px);
+    padding: 1vw;
+  }
+  h2 {
+    font-size: clamp(17px, 2.5vw, 21px);
+    padding: 1vw;
+  }
+  h3 {
+    font-size: clamp(17px, 7vw, 30px);
+  }
+  #main {
+    margin: 100px auto;
+    padding: 30px 40px 200px;
+  }
+  .itemize {
+    margin: 0;
+    padding-left: 20px;
+  }
+}
