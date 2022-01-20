@@ -3,66 +3,15 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   background-color: #fff;
 }
 body {
-  font-size: 14px;
+  font-size: 16px;
   -webkit-size-: 100%;
   font-family: "Helvetica Neue", "Helvetica", "ヒラギノ角ゴシック",
     "Hiragino Sans", "Segoe UI", "Yu Gothic UI", "Meiryo", "メイリオ",
     sans-serif;
-}
-h1 {
-  display: inline-block;
-  position: relative;
-  padding: 5px;
-  margin: auto;
-  font-weight: normal;
-  letter-spacing: 5px;
-  text-decoration: none; /* リンクの下線を消す */
-  color: #000;
-}
-h2 {
-  display: inline-block;
-  position: relative;
-  padding: 5px;
-  margin: auto;
-  font-weight: normal;
-  letter-spacing: 3px;
-  text-decoration: none; /* リンクの下線を消す */
-  color: #000;
-}
-.centering_parent {
-  position: absolute;
-  top: 50%; /* 親要素の半分下にずらす */
-  left: 50%; /* 親要素の半分右にずらす */
-  transform: translateY(-50%) translateX(-50%); /* 要素自体の半分、上と左にずらす */
-  padding: 20px 20px 20px 200px; /* 余白指定 */
-}
-h3 {
-  color: #000;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  margin: 0px 30px 0 30px;
-  letter-spacing: 2px;
-}
-h3::after {
-  content: "";
-  display: block;
-  border-bottom: solid 3px #000;
-  position: relative;
-  width: 300px;
-  margin: 5px auto;
-}
-h4 {
-  font-size: 19.8px;
-  font-weight: bold;
-  text-align: start;
-  position: relative;
-  margin: 20px 0px 10px 0px;
-  letter-spacing: 1px;
 }
 #header {
   position: fixed;
@@ -71,12 +20,43 @@ h4 {
   left: 0;
   margin: auto;
   background-color: #fff;
-  box-shadow:#778899 0 0 8px 0;
+  box-shadow: #778899 0 0 8px 0;
   width: 100%;
   height: 100px;
   z-index: 1;
 }
+.centering_parent {
+  display: flex;
+  margin: auto;
+  justify-content:center;
+  height: 100px;
+  padding-left: 200px;
+}
+#siteTitle {
+  position: relative;
+  padding: 5px;
+  margin: auto 0;
+  width: 120px;
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-decoration: none; /* リンクの下線を消す */
+  color: #000;
+}
+#siteTitleEn {
+  position: relative;
+  padding: 5px;
+  margin: auto 0;
+  width: 215px;
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-decoration: none; /* リンクの下線を消す */
+  color: #000;
+}
+
 /* ナビゲーションバー */
+input[type="checkbox"] {
+  display: none; /* 表示しない処理 */
+}
 #menu {
   position: fixed;
   top: 0;
@@ -101,33 +81,87 @@ h4 {
   letter-spacing: 2px;
   margin: 0;
   list-style: none;
-  font-size: 19.8px;
+  font-size: 20.8px;
   cursor: pointer; /* カーソルの種類 */
 }
-.menu-item:hover { /* カーソルが重なった時のアニメーション */
-  font-size: 24px;
+.menu-item:hover {
+  /* カーソルが重なった時のアニメーション */
+  font-size: 24.5px;
   transition: font-size 0.25s;
 }
-.clear { /* ナビゲーションバーの文字設定 */
+.clear {
+  /* ナビゲーションバーの文字設定 */
   text-decoration: none; /* リンクの下線を消す */
   color: #fff;
 }
-.language { /* 言語切り替えの文字設定 */
+.language {
+  /* 言語切り替えの文字設定 */
   font-weight: bold;
   color: #fff;
 }
+.updated_at {
+  position: absolute;
+  right: 70px;
+  text-align: right;
+  margin: 0;
+}
 /* コンテンツ */
 #main {
-  display: block;
   position: relative;
   top: 0;
   left: 0;
   margin: 100px 0 100px 200px;
   padding: 30px 70px 200px; /* 上 | 左右 | 下 */
 }
+h1 {
+  color: #000;
+  font-size: 28.8px;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  margin: 0px 30px 0 30px;
+  letter-spacing: 2px;
+}
+h1::after {
+  content: "";
+  display: block;
+  border-bottom: solid 2.5px #000;
+  position: relative;
+  width: 300px;
+  margin: 5px auto;
+}
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  border-left: solid 4px;
+  padding-left: 10px;
+  text-align: start;
+  position: relative;
+  margin: 10px 0px;
+  letter-spacing: 2px;
+}
 .itemize {
+  margin: auto;
   margin-left: 30px;
 }
+/* Publicationページのタグ */
+.publication {
+  width: 760px;
+  margin: 20px auto 0px;
+}
+/* publicationの文章サイズ */
+#biography {
+  width: 550px;
+}
+/* マウスが重なった時にそれぞれの論文をハイライトする */
+.sw {
+  background-color: #fff;
+  padding-bottom: 15px;
+  letter-spacing: 0px;
+}
+/* .sw:hover  {
+  background-color: #c9d9e9;
+} */
 .breake-all {
   word-break: break-all; /* 長いURLを改行する */
 }
@@ -138,44 +172,82 @@ h4 {
   margin: 10px 0;
   overflow: hidden; /* 指定した幅以外を非表示にする */
 }
-#slideshow_image{
-  width: 100%; 
+#slideshow_image {
+  width: 100%;
   /* opacity: 0;
   transition:all 0.4s ease-in-out;  */
 }
+/* Homeの写真横に文章を並べるための処理 */
+#about {
+  display: flex;
+  width: 840px;
+  margin: 20px auto 0px;
+}
+.aboutInner {
+  margin: 0 auto;
+  vertical-align: top;
+  padding: 0px 10px; /* 上 | 左右 | 下 */
+}
+/* SNSアイコン */
+.snsIcon {
+  display: flex;
+  justify-content: space-around;
+  width: 120px;
+  margin: auto;
+  padding: 50px 0;
+}
+.menuSnsIcon {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  margin: auto;
+  padding: 0;
+  padding-top: 30px;
+}
+.snsIconInner {
+  margin: 0;
+  padding: 0px;
+  width: 50px;
+  height: 50px;
+}
+.githubIcon {
+  margin: 0;
+  padding: 7.5px;
+  width: 35px;
+  height: 35px;
+}
 #footer {
-  position: fixed;
   text-align: center;
   bottom: 0;
   left: 0;
   margin: auto;
   background-color: #fff;
   width: 100%;
-  height: 0px;
-}
-/* Homeの写真横に文章を並べるための処理 */
-.inline-block-text {
-  display: inline-block;
-  margin: 0 auto;
-  vertical-align: top;
-  padding: 10px 10px 0px; /* 上 | 左右 | 下 */
+  height: 100px;
 }
 /* 画面幅が1200px以下の時 */
 @media screen and (max-width: 1200px) {
+  .centering_parent {
+    padding: 0; /* 余白指定 */
+  }
   #main {
     margin: 100px auto;
-    padding: 30px 70px ;
+    padding: 30px 50px;
   }
-  h3::after {
-    width: 50vw;
+  h1::after {
+    width: 60vw;
     max-width: 300px;
   }
-  .centering_parent {
-    padding: 20px; /* 余白指定 */
+  #about {
+    width: 90vw;
+    max-width: 840px;
+  }
+  .updated_at {
+    right: 50px;
   }
   .slideshow {
-    width: 25vw; /* スライドショーのサイズ */
-    height: 25vw;
+    width: clamp(120px, 25vw, 250px); /* スライドショーのサイズ */
+    height: clamp(120px, 25vw, 250px);
   }
   #menu {
     transform: translateX(-200px); /* ナビゲーションバーがひっこむ設定 */
@@ -194,6 +266,7 @@ h4 {
     opacity: 0.7; /* 半透明にする */
     z-index: 2;
     display: none;
+    cursor: pointer; /* カーソルの種類 */
   }
   /* 折り畳みスイッチ ~#が開く先*/
   input[type="checkbox"]:checked ~ #menu {
@@ -216,12 +289,21 @@ h4 {
     cursor: pointer;
     position: fixed;
     z-index: 99;
-    height: 100%;
-    width: 100%;
     top: 22px;
     left: 15px;
     height: 22px;
     width: 22px;
+  }
+  .sidebarIconSw {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    top: 22px;
+    left: 15px;
+    height: 35px;
+    width: 35px;
   }
   /* アイコンの造形 */
   .spinner {
@@ -279,25 +361,60 @@ h4 {
     background-color: #fff;
   }
 }
+
+/* 画面幅が900px以下の時 */
+@media screen and (max-width: 900px) {
+  .publication {
+    width: 75vw;
+  }
+  #about {
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+    padding: 0;
+  }
+  .slideshow {
+    width: clamp(120px, 40vw, 290px); /* スライドショーのサイズ */
+    height: clamp(120px, 40vw, 290px);
+  }
+  .updated_at {
+    position: static;
+    text-align: right;
+    margin: 0 10px 0 0;
+  }
+  #biography {
+    width: 70vw;
+  }
+}
 /* 画面幅が700px以下の時 */
 @media screen and (max-width: 700px) {
-  h1 {
-    font-size: clamp(18px, 2.5vw, 21px);
-    padding: 1vw;
-  }
-  h2 {
-    font-size: clamp(17px, 2.5vw, 21px);
-    padding: 1vw;
-  }
-  h3 {
-    font-size: clamp(17px, 7vw, 30px);
-  }
   #main {
     margin: 100px auto;
-    padding: 30px 40px 200px;
+    padding: 30px 4vw 0;
+  }
+  .updated_at {
+    /* font-size: clamp(12px, 2.5vw, 14px); */
+    margin-bottom: clamp(10px, 0.5vw, 0px);
   }
   .itemize {
     margin: 0;
     padding-left: 20px;
+  }
+}
+/* 画面幅が450px以下の時 */
+@media screen and (max-width: 450px) {
+  .centering_parent {
+    display: flex;
+    flex-direction: column;
+  }
+  #siteTitle  {
+  margin: 0 auto;
+  padding: 3px;
+  font-size:22px;
+  }
+  #siteTitleEn  {
+    margin: 0 auto;
+    padding: 3px;
+    font-size:22px;
   }
 }

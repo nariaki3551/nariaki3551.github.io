@@ -2,12 +2,12 @@
 // ▼設定：スライドショーで見せたい画像ファイル群
 // ----------------------------------------------
 const imgset = [
-    "./image/figure1.jpg",
-    "./image/figure2.jpg",
-    "./image/figure3.jpg",
-    "./image/figure4.jpg",
-    "./image/figure5.jpg",
-    "./image/figure6.jpg"
+    "./image/figure1.JPG",
+    "./image/figure2.JPG",
+    "./image/figure3.JPG",
+    "./image/figure4.JPG",
+    "./image/figure5.JPG",
+    "./image/figure6.JPG"
 ];
 let counter = 0;
 
