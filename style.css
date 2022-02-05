@@ -217,6 +217,12 @@ input[type="checkbox"] {
   border: 1.5px solid #333;
   border-radius: 3px;
 }
+.updated_at {
+  position: absolute;
+  right: 70px;
+  text-align: right;
+  margin: 0;
+}
 /* コンテンツ */
 #main {
   position: relative;
