@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="jp">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,8 +9,9 @@
       content="立岩斉明,Nariaki Tateiwa,九州大学,九大,最適化理論,グラフ理論"
     />
     <title>立岩斉明|Nariaki Tateiwa</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" />
-    <!-- <script type="text/javascript" src="./slidshow.js"></script> -->
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./menu.js"></script>
   </head>
   <body>
     <!-- メニューバーのスイッチ -->
@@ -20,52 +21,80 @@
       <div class="spinner horizontal"></div>
       <div class="spinner diagonal part-2"></div>
     </label>
+    <label for="openSidebarMenu" class="sidebarIconSw"></label>
     <!-- ナビゲーションバー -->
     <nav id="menu">
-      <ul class="menu-inner">
-        <script type="text/javascript" src="./menu.js"></script>
-      </ul>
       <!-- <a class="language">JP/</a
         ><a href="./en-index.html" class="language">EN</a> -->
     </nav>
-    <div class="menu-background"></div>
+    <label for="openSidebarMenu" class="menu-background"></label>
     <!-- ヘッダー -->
     <header id="header">
       <div class="centering_parent">
-        <a href="./index.html"> <h1>立岩斉明</h1></a>
-        <a href="./index.html"> <h2>Nariaki Tateiwa</h2></a>
+        <a href="./index.html" id="siteTitle">立岩斉明</a>
+        <a href="./index.html" id="siteTitleEn">Nariaki Tateiwa</a>
       </div>
     </header>
+    <div id="pageTop"></div>
+    <a href="#pageTop" id="scrolled"><p></p></a>
     <!-- メインコンテンツ -->
     <div id="main">
-      <h3>About</h3>
-      <div class="inline-block-text">
-        <div class="slideshow">
-          <img
-            src="./image/figure1.jpg"
-            id="slideshow_image"
-            alt="スライドショー"
-          />
+      <h1>About</h1>
+      <div id="about">
+        <div class="aboutInner">
+          <div class="slideshow">
+            <img
+              src="./image/figure1.JPG"
+              id="slideshow_image"
+              alt="スライドショー"
+            />
+          </div>
+        </div>
+        <div class="aboutInner" id="biography">
+          <h2>経歴</h2>
+          <ul>
+            <li>
+              2022年 3月
+              九州大学大学院数理学府数理学専攻博士後期課程修了(見込み)
+            </li>
+            <li>2019年 3月 九州大学大学院数理学府数理学専攻博士前期課程修了</li>
+            <li>2017年 4月 九州大学大学院数理学府数理学専攻入学</li>
+            <li>2017年 3月 九州大学理学部数学科卒業</li>
+            <li>2013年 4月 九州大学理学部数学科入学</li>
+          </ul>
+          <h2>研究キーワード</h2>
+          <ul>
+            <li>数理最適化</li>
+            <li>混合整数線形計画問題</li>
+            <li>格子基底簡約</li>
+            <li>並列ソフトウェア</li>
+          </ul>
         </div>
       </div>
-      <div class="inline-block-text">
-        <h4>経歴</h4>
-        <ul class="itemize">
-          <li>
-            2022年 3月 九州大学大学院数理学府数理学専攻博士後期課程修了(見込み)
-          </li>
-          <li>2019年 3月 九州大学大学院数理学府数理学専攻博士前期課程修了</li>
-          <li>2017年 4月 九州大学大学院数理学府数理学専攻入学</li>
-          <li>2017年 3月 九州大学理学部数学科卒業</li>
-          <li>2013年 4月 九州大学理学部数学科入学</li>
-        </ul>
-        <h4>研究キーワード</h4>
-        <ul class="itemize">
-          <li>数理最適化</li>
-          <li>混合整数線形計画問題</li>
-          <li>格子基底簡約</li>
-          <li>並列ソフトウェア</li>
-        </ul>
+      <div class="snsIcon">
+        <a
+          href="https://github.com/nariaki3551"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="snsIconInner"
+        >
+          <img
+            src="./image/GitHub-Mark-120px-plus.png"
+            class="githubIcon"
+            alt="githubのアイコン"
+          />
+        </a>
+        <a
+          href="https://inarizuuuushi.hatenablog.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./image/hatenablog-logo.svg"
+            class="snsIconInner"
+            alt="はてなブログのアイコン"
+          />
+        </a>
       </div>
     </div>
   </body>

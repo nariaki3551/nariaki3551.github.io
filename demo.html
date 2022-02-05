@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="jp">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,6 +31,7 @@
       <div class="spinner horizontal"></div>
       <div class="spinner diagonal part-2"></div>
     </label>
+    <label for="openSidebarMenu" class="sidebarIconSw"></label>
     <!-- ナビゲーションバー -->
     <nav id="menu">
       <ul class="menu-inner">
@@ -39,17 +40,17 @@
       <a class="language">JP/</a
       ><a href="./en-index.html" class="language">EN</a>
     </nav>
-    <div class="menu-background"></div>
+    <label for="openSidebarMenu" class="menu-background"></label>
     <!-- ヘッダー -->
     <header id="header">
-      <div class="centering_parent">
-        <a href="./index.html"> <h1>立岩斉明</h1></a>
-        <a href="./index.html"> <h2>Nariaki Tateiwa</h2></a>
+        <div class="centering_parent">
+          <a href="./index.html" id="siteTitle">立岩斉明</a>
+          <a href="./index.html" id="siteTitleEn">Nariaki Tateiwa</a>
       </div>
     </header>
     <!-- メインコンテンツ -->
     <div id="main">
-      <h3>Demo</h3>
+      <h1>Demo</h1>
       <pre class="prettyprint linenums">
 &lt;input type=&quot;checkbox&quot; class=&quot;openSidebarMenu&quot; id=&quot;openSidebarMenu&quot; /&gt;
   &lt;label for=&quot;openSidebarMenu&quot; class=&quot;sidebarIconToggle&quot;&gt;
