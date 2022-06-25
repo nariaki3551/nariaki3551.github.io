@@ -74,6 +74,10 @@ input[type="checkbox"] {
   margin: 100px auto;
   padding: 0;
 }
+#menu li {
+  margin: 0;
+  padding: 0;
+}
 #menu ul::before {
   content: "";
   display: block;
@@ -157,6 +161,7 @@ input[type="checkbox"] {
   left: 0;
 }
 #scrolled {
+  display: none;
   position: fixed;
   right: 15px;
   bottom: 15px;
@@ -217,12 +222,6 @@ input[type="checkbox"] {
   border: 1.5px solid #333;
   border-radius: 3px;
 }
-.updated_at {
-  position: absolute;
-  right: 70px;
-  text-align: right;
-  margin: 0;
-}
 /* コンテンツ */
 #main {
   position: relative;
@@ -264,6 +263,12 @@ ul {
   padding-bottom: 20px;
   margin: 0 0 0 20px;
 }
+li {
+  padding-bottom: 5px;
+}
+li:last-child {
+  padding-bottom: 15px;
+}
 /* Homeの写真横に文章を並べるための処理 */
 #about {
   display: flex;
@@ -273,13 +278,13 @@ ul {
 .aboutInner {
   margin: 0 auto;
   vertical-align: top;
-  padding: 0px 10px; /* 上 | 左右 | 下 */
+  padding: 0 10px 0 40px;
 }
 /* スライドショー設定 */
 .slideshow {
   width: 250px; /* スライドショーのサイズ */
   height: 250px;
-  margin: 10px 0;
+  margin: 10px;
   overflow: hidden; /* 指定した幅以外を非表示にする */
 }
 #slideshow_image {
@@ -299,6 +304,9 @@ ul {
 }
 #summarize li {
   padding-bottom: 30px;
+}
+#summarize p {
+  padding: 0 0 10px 60px;
 }
 .breake-all {
   word-break: break-all; /* 長いURLを改行する */
@@ -463,9 +471,15 @@ iframe {
   }
   #about {
     flex-direction: column;
+    align-items: center;
     width: 80vw;
     margin: auto;
     padding: 0;
+  }
+  .aboutInner {
+    margin: 0 auto;
+    vertical-align: top;
+    padding: 0 10px 0 0px;
   }
   .slideshow {
     width: clamp(120px, 40vw, 290px); /* スライドショーのサイズ */
@@ -474,10 +488,16 @@ iframe {
   .updated_at {
     position: static;
     text-align: right;
-    margin: 0 20px 0 0;
+    margin: 0 20px 0px 0;
   }
   #biography {
     width: 70vw;
+  }
+  iframe {
+    max-width: 560px;
+    max-height: 315px;
+    width: 64vw;
+    height: 36vw; /*比率16:9*/
   }
 }
 /* 画面幅が700px以下の時 */
@@ -487,12 +507,18 @@ iframe {
     padding: 50px 4vw 30px;
   }
   .updated_at {
-    /* font-size: clamp(12px, 2.5vw, 14px); */
-    margin-bottom: clamp(10px, 0.5vw, 0px);
+    margin-bottom: 20px;
   }
   ol,
   ul {
     margin: 0;
+    padding-left: 20px;
+  }
+  #summarize p {
+    transition: padding 0.2s;
+    padding: 0 0 10px 20px;
+  }
+  iframe {
     padding-left: 20px;
   }
 }
