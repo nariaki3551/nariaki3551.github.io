@@ -1,12 +1,44 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for 立岩斉明 at 2022-01-04 22:34:28 +0900 
+%% Created for Tateiwa at 2022-07-25 00:04:55 +0900 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{pmlr-v162-yamamura22a,
+	abstract = {Deep learning models are vulnerable to adversarial examples, and adversarial attacks used to generate such examples have attracted considerable research interest. Although existing methods based on the steepest descent have achieved high attack success rates, ill-conditioned problems occasionally reduce their performance. To address this limitation, we utilize the conjugate gradient (CG) method, which is effective for this type of problem, and propose a novel attack algorithm inspired by the CG method, named the Auto Conjugate Gradient (ACG) attack. The results of large-scale evaluation experiments conducted on the latest robust models show that, for most models, ACG was able to find more adversarial examples with fewer iterations than the existing SOTA algorithm Auto-PGD (APGD). We investigated the difference in search performance between ACG and APGD in terms of diversification and intensification, and define a measure called Diversity Index (DI) to quantify the degree of diversity. From the analysis of the diversity using this index, we show that the more diverse search of the proposed method remarkably improves its attack success rate.},
+	author = {Yamamura, Keiichiro and Sato, Haruki and Tateiwa, Nariaki and Hata, Nozomi and Mitsutake, Toru and Oe, Issa and Ishikura, Hiroki and Fujisawa, Katsuki},
+	booktitle = {Proceedings of the 39th International Conference on Machine Learning},
+	date-added = {2022-07-25 00:04:39 +0900},
+	date-modified = {2022-07-25 00:04:39 +0900},
+	editor = {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+	month = {17--23 Jul},
+	pages = {24872--24894},
+	pdf = {https://proceedings.mlr.press/v162/yamamura22a/yamamura22a.pdf},
+	publisher = {PMLR},
+	series = {Proceedings of Machine Learning Research},
+	title = {Diversified Adversarial Attacks based on Conjugate Gradient Method},
+	url = {https://proceedings.mlr.press/v162/yamamura22a.html},
+	volume = {162},
+	year = {2022},
+	bdsk-url-1 = {https://proceedings.mlr.press/v162/yamamura22a.html}}
+
+@misc{https://doi.org/10.48550/arxiv.2206.09628,
+	author = {Yamamura, Keiichiro and Sato, Haruki and Tateiwa, Nariaki and Hata, Nozomi and Mitsutake, Toru and Oe, Issa and Ishikura, Hiroki and Fujisawa, Katsuki},
+	copyright = {Creative Commons Attribution 4.0 International},
+	date-added = {2022-06-25 21:53:37 +0900},
+	date-modified = {2022-06-25 21:53:37 +0900},
+	doi = {10.48550/ARXIV.2206.09628},
+	keywords = {Machine Learning (cs.LG), Cryptography and Security (cs.CR), Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+	publisher = {arXiv},
+	title = {Diversified Adversarial Attacks based on Conjugate Gradient Method},
+	url = {https://arxiv.org/abs/2206.09628},
+	year = {2022},
+	bdsk-url-1 = {https://arxiv.org/abs/2206.09628},
+	bdsk-url-2 = {https://doi.org/10.48550/ARXIV.2206.09628}}
 
 @article{TANAKA2021103265,
 	abstract = {Map matching is an essential preprocessing step for most trajectory-based intelligent transport system services. Due to device capability constraints and the lack of a high-performance model, map matching for low-sampling-rate trajectories is of particular interest. Therefore, we developed a time-expanded graph matching (TEG-matching) that has three advantages (1) high speed and accuracy, as it is robust for spatial measurement error and a pause such as at traffic lights; (2) being parameter-free, that is, our algorithm has no predetermined hyperparameters; and (3) only requiring ordered locations for map matching. Given a set of low-frequency GPS data, we construct a time-expanded graph (TEG) whose path from source to sink represents a candidate route. We find the shortest path on TEG to obtain the matching route with a small area between the vehicle trajectory. Additionally, we introduce two general speedup techniques (most map matching methods can apply) bottom-up segmentation and fractional cascading. Numerical experiments with worldwide vehicle trajectories in a public dataset show that TEG-matching outperforms state-of-the-art algorithms in terms of accuracy and speed, and we verify the effectiveness of the two general speedup techniques.},
@@ -25,14 +57,16 @@
 
 @article{yoshida2020new,
 	abstract = {The studies of browsing behavior have gained increasing attention in web analysis for providing better service. Most of the conventional approaches focus on simple indices such as average dwell time and conversion rate. These indices make similar evaluations to websites even if their features are significantly different. Moreover, such statistical indices are not sensitive to the dynamics of users'interests. In this paper, we propose a new framework for measuring a website's attractiveness that takes into account both the distribution and dynamics of users'interests. Within the framework, we define a new index for the website, called Attractiveness Factor, which evaluates the degree of users'attention. It consists of three procedures: First, we capture the transition of users'interests during browsing by solving a nonnegative matrix factorization and constrained network flow problems. To accommodate multiple types of interests of a user, we applied a soft clustering as opposed to a hard clustering to model attributes of users and websites. Second, for each website, the feature of each cluster is obtained by fitting the dwell time distribution with Weibull distribution. Finally, we calculate Attractiveness Factor of a website by applying the results of clustering and fitting. Attractiveness Factor depends on the distribution of the dwell time of users interested in the website, which reflects the change of interest of users. Numerical experiments with real web access data of Yahoo Japan News are conducted by solving extremely large-scale optimization problems. They show that Attractiveness Factor captures more exceptional information about browsing behavior more effectively than well-used indices. Attractive factors give low ratings to category pages; however, it can assign high ratings to websites that attract many people, such as hot topic news about the 2018 FIFA World Cup, Japan's new imperial era'REIWA,'and North Korea---the United States Hanoi Summit. Moreover, we demonstrate that Attractiveness Factor can detect the tendency of users'attention to each website at a given time interval of the day.},
+	annote = {The studies of browsing behavior have gained increasing attention in web analysis for providing better service. Most of the conventional approaches focus on simple indices such as average dwell time and conversion rate. These indices make similar evaluations to websites even if their features are significantly different. Moreover, such statistical indices are not sensitive to the dynamics of users' interests. In this paper, we propose a new framework for measuring a website's attractiveness that takes into account both the distribution and dynamics of users' interests. Within the framework, we define a new index for the website, called Attractiveness Factor, which evaluates the degree of users' attention. It consists of three procedures: First, we capture the transition of users' interests during browsing by solving a nonnegative matrix factorization and constrained network flow problems. To accommodate multiple types of interests of a user, we applied a soft clustering as opposed to a hard clustering to model attributes of users and websites. Second, for each website, the feature of each cluster is obtained by fitting the dwell time distribution with Weibull distribution. Finally, we calculate Attractiveness Factor of a website by applying the results of clustering and fitting. Attractiveness Factor depends on the distribution of the dwell time of users interested in the website, which reflects the change of interest of users. Numerical experiments with real web access data of Yahoo Japan News are conducted by solving extremely large-scale optimization problems. They show that Attractiveness Factor captures more exceptional information about browsing behavior more effectively than well-used indices. Attractive factors give low ratings to category pages; however, it can assign high ratings to websites that attract many people, such as hot topic news about the 2018 FIFA World Cup, Japan's new imperial era' REIWA,' and North Korea---the United States Hanoi Summit. Moreover, we demonstrate that Attractiveness Factor can detect the tendency of users' attention to each website at a given time interval of the day.},
 	author = {Yoshida, Akihiro and Higurashi, Tatsuru and Maruishi, Masaki and Tateiwa, Nariaki and Hata, Nozomi and Tanaka, Akira and Wakamatsu, Takashi and Nagamatsu, Kenichi and Tajima, Akira and Fujisawa, Katsuki},
 	date = {2020/03/01},
 	date-added = {2022-01-04 21:42:45 +0900},
-	date-modified = {2022-01-04 21:42:45 +0900},
+	date-modified = {2022-06-25 21:49:44 +0900},
 	doi = {10.1007/s41019-019-00112-1},
 	id = {Yoshida2020},
 	isbn = {2364-1541},
 	journal = {Data Science and Engineering},
+	keywords = {User behavior data, Weibull distribution, Network flow problem, Nonnegative matrix factorization, Linear optimization problem},
 	number = {1},
 	pages = {48--64},
 	title = {New Performance Index ``Attractiveness Factor''for Evaluating Websites via Obtaining Transition of Users'Interests},
@@ -57,8 +91,11 @@
 	year = {2020}}
 
 @inproceedings{tateiwa2022config,
+	abstract = {Lattice problems are a class of optimization problems that are notably hard. There are no classical or quantum algorithms known to solve these problems efficiently. Their hardness has made lattices a major cryptographic primitive for post-quantum cryptography. Several different approaches have been used for lattice problems with different computational profiles; some suffer from super-exponential time, and others require exponential space. This motivated us to develop a novel lattice problem solver, CMAP-LAP, based on the clever coordination of different algorithms that run massively in parallel. With our flexible framework, heterogeneous modules run asynchronously in parallel on a large-scale distributed system while exchanging information, which drastically boosts the overall performance. We also implement full checkpoint-and-restart functionality, which is vital to high-dimensional lattice problems. CMAP-LAP facilitates the implementation of large-scale parallel strategies for lattice problems since all the functions are designed to be customizable and abstract. Through numerical experiments with up to 103,680 cores, we evaluated the performance and stability of our system and demonstrated its high capability for future massive-scale experiments.},
 	author = {Tateiwa, Nariaki and Shinano, Yuji and Yamamura, Keichiro and Yoshida, Akihiro and Kaji, Shizuo and Yasuda, Masaya and Fujisawa, Katsuki},
 	booktitle = {HiPC28: IEEE 28th International Conference on High Performance Computing, Data, and Analytics},
+	date-modified = {2022-06-25 21:46:11 +0900},
+	keywords = {Discrete optimization , Lattice problem , Lattice-based cryptography , Shortest vector problem , Parallel algorithms , Ubiquity Generator Framework},
 	title = {CMAP-LAP: Configurable Massively Parallel Solver for Lattice Problems},
 	year = {2021}}
 
@@ -67,8 +104,10 @@
 	address = {Germany},
 	author = {Satoshi Nakamura and Nariaki Tateiwa and Koha Kinjo and Yasuhiko Ikematsu and Masaya Yasuda and Katsuki Fujisawa},
 	booktitle = {Proceedings of the Sixth International Conference on Mathematics and Computing - ICMC 2020},
+	date-modified = {2022-06-25 21:47:19 +0900},
 	doi = {10.1007/978-981-15-8061-1_3},
 	isbn = {9789811580604},
+	keywords = {Learning with errors (LWE), Lattice reduction, Projected lattices},
 	language = {English},
 	pages = {29--42},
 	publisher = {Springer Science and Business Media Deutschland GmbH},
@@ -80,22 +119,30 @@
 @inproceedings{yoshida2019practical,
 	author = {Yoshida, Akihiro and Yatsushiro, Yosuke and Hata, Nozomi and Higurashi, Tatsuru and Tateiwa, Nariaki and Wakamatsu, Takashi and Tanaka, Akira and Nagamatsu, Kenichi and Fujisawa, Katsuki},
 	booktitle = {2019 IEEE International Conference on Big Data (Big Data)},
+	date-modified = {2022-06-25 21:47:43 +0900},
+	keywords = {Integer optimization Problem , Bike Repositioning Problem , Demand Prediction , Graph Convolutional Network},
 	organization = {IEEE},
 	pages = {1251--1258},
 	title = {Practical end-to-end repositioning algorithm for managing bike-sharing system},
 	year = {2019}}
 
 @inproceedings{hata2018mobility,
+	abstract = {Cyber-Physical Systems (CPSs) are attracting significant attention from a number of industries, including social infrastructure, manufacturing, retail, among others. We can easily gather big datasets of people and transportation movements by utilizing camera and sensor technologies, and create new industrial applications by optimizing and simulating social mobility in the cyberspace. In this paper, we develop the system which automatically performs a series of processes, including object detection, multiple object tracking, and mobility optimization. The mobility of humans and objects is one of the essential components in the real world. Therefore, our system can be widely applied to various application fields. Our major contributions to this paper are remarkable performance improvement of multiple object tracking and building the new mobility optimization engine. In the former, we improve the multiple object tracker using K-Shortest Paths (KSP), which achieves significant data reduction and acceleration by specifying and deleting unnecessary nodes. Numerical experiments show that our proposed tracker is over three times faster than the original KSP tracker while keeping the accuracy. We formulate the mobility optimization problem as the SATisfiability problem (SAT) and the Integer Programming problem (IP) in the latter. Numerical experiments demonstrate that the total transit time can be reduced from 30 s to 10 s. We discuss the characteristics of solutions obtained by the two formulations. We can finally select the appropriate optimization method according to the constraints of calculation time and accuracy for real applications.},
 	author = {Hata, Nozomi and Nakayama, Takashi and Tanaka, Akira and Wakamatsu, Takashi and Yoshida, Akihiro and Tateiwa, Nariaki and Nishikawa, Yuri and Ozawa, Jun and Fujisawa, Katsuki},
 	booktitle = {2018 IEEE International Conference on Big Data (Big Data)},
+	date-modified = {2022-06-25 21:50:20 +0900},
+	keywords = {cyber-physical system , mobility , multiple object tracking , satisfiability problem , integer programming},
 	organization = {IEEE},
 	pages = {4026--4035},
 	title = {Mobility Optimization on Cyber Physical System via Multiple Object Tracking and Mathematical Programming},
 	year = {2018}}
 
 @article{tateiwa2018hybrid,
+	abstract = {For hybrid electric vehicle (HEV) systems, studies using model-based simulators have been actively conducted. The vehicle powertrain simulator makes it easier to evaluate the powertrain system. In this paper, we utilize a Toyota Hybrid System (THS) simulator to obtain a long-term control that optimizes the fuel efficiency when the vehicle speed over a certain period is given. Our proposed method obtains optimal long-term control by solving the shortest path problem with state of charge (SOC) constraints after constructing a graph expressing the transition of the fuel and battery consumption. We also propose a search method for vehicle control using bicubic spline interpolation without the preparation of a controller. We finally remove almost all edges from a graph by 97.2% at most through the utilization of 0-1 integer linear programming, which enables a 3.88x speedup in obtaining the optimal vehicle control.},
 	author = {Tateiwa, Nariaki and Hata, Nozomi and Tanaka, Akira and Nakayama, Takashi and Yoshida, Akihiro and Wakamatsu, Takashi and Fujisawa, Katsuki},
+	date-modified = {2022-06-25 21:51:54 +0900},
 	journal = {IFAC-PapersOnLine},
+	keywords = {Hybrid vehicles, Graph theory, Computer simulation, Optimal control, Function approximation, Optimization problem},
 	number = {31},
 	pages = {201--206},
 	publisher = {Elsevier},
@@ -106,7 +153,9 @@
 @inproceedings{tanaka2017practical,
 	author = {Tanaka, Akira and Hata, Nozomi and Tateiwa, Nariaki and Fujisawa, Katsuki},
 	booktitle = {2017 IEEE International Conference on Big Data (Big Data)},
+	date-modified = {2022-06-25 21:48:05 +0900},
 	doi = {10.1109/BigData.2017.8258322},
+	keywords = {universally quickest flow , deep learning , tsunami evacuation planning , graph analysis},
 	organization = {IEEE},
 	pages = {3368--3377},
 	title = {Practical approach to evacuation planning via network flow and deep learning},
@@ -116,7 +165,9 @@
 @techreport{CMAPLAP.2021,
 	address = {Takustr. 7, 14195 Berlin},
 	author = {Nariaki Tateiwa and Yuji Shinano and Keiichiro Yamamura and Akihiro Yoshida and Shizuo Kaji and Masaya Yasuda and Katsuki Fujisawa},
+	date-modified = {2022-06-25 21:51:02 +0900},
 	institution = {ZIB},
+	keywords = {Discrete optimization , Lattice problem , Lattice-based cryptography , Shortest vector problem , Parallel algorithms , Ubiquity Generator Framework},
 	language = {eng},
 	number = {21-16},
 	title = {CMAP-LAP: Configurable Massively Parallel Solver for Lattice Problems},
@@ -125,7 +176,9 @@
 @techreport{CMAPDeepBKZ.2021,
 	address = {Takustr. 7, 14195 Berlin},
 	author = {Nariaki Tateiwa and Yuji Shinano and Masaya Yasuda and Shizuo Kaji and Keiichiro Yamamura and Katsuki Fujisawa},
+	date-modified = {2022-06-25 21:50:51 +0900},
 	institution = {ZIB},
+	keywords = {deepBKZ, parallel computation, lattice based cryptography, shortest vector problem, ENUM, ubiquity generator framework},
 	language = {eng},
 	number = {21-38},
 	title = {Massively parallel sharing lattice basis reduction},

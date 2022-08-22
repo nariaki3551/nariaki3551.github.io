@@ -14,40 +14,23 @@
     <script type="text/javascript" src="./script.js"></script>
   </head>
   <body>
-    <!-- メニューバーのスイッチ -->
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-    <label for="openSidebarMenu" class="sidebarIconToggle">
-      <div class="spinner diagonal part-1"></div>
-      <div class="spinner horizontal"></div>
-      <div class="spinner diagonal part-2"></div>
-    </label>
-    <label for="openSidebarMenu" class="sidebarIconSw"></label>
-    <!-- ナビゲーションバー -->
-    <nav id="menu">
-      <!-- <a class="language">JP/</a
-        ><a href="./en-index.html" class="language">EN</a> -->
-    </nav>
-    <label for="openSidebarMenu" class="menu-background"></label>
     <!-- ヘッダー -->
-    <header id="header">
-      <div class="centering_parent">
-        <a href="./index.html" id="siteTitle">立岩斉明</a>
-        <a href="./index.html" id="siteTitleEn">Nariaki Tateiwa</a>
-      </div>
-    </header>
+    <header id="header"></header>
     <div id="pageTop"></div>
-    <a href="#pageTop" id="scrolled"><p></p></a>
+    <a href="#pageTop" id="scrolled"
+      ><p class="left"></p>
+      <p class="right"></p
+    ></a>
     <!-- メインコンテンツ -->
     <div id="main">
-      <h1>About</h1>
+      <h1 class="inner">About</h1>
       <div id="about">
-        <div class="slideshow">
-          <img
-            src="./image/figure7.jpeg"
-            id="slideshow_image"
-            alt="スライドショー"
-          />
-        </div>
+        <img
+          src="./image/figure7.jpeg"
+          alt="立岩斉明の写真"
+          width="372px"
+          height="372px"
+        />
         <div class="aboutInner" id="biography">
           <h2>経歴</h2>
           <ul>
@@ -72,22 +55,6 @@
             <li>並列ソフトウェア</li>
           </ul>
         </div>
-      </div>
-      <div class="snsIcon">
-        <a href="https://github.com/nariaki3551" class="snsIconInner">
-          <img
-            src="./image/GitHub-Mark-120px-plus.png"
-            class="githubIcon"
-            alt="githubのアイコン"
-          />
-        </a>
-        <a href="https://inarizuuuushi.hatenablog.com/">
-          <img
-            src="./image/hatenablog-logo.svg"
-            class="snsIconInner"
-            alt="はてなブログのアイコン"
-          />
-        </a>
       </div>
     </div>
   </body>

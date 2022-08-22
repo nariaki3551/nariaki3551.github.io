@@ -8,41 +8,26 @@
       name="keywords"
       content="立岩斉明,Nariaki Tateiwa,九州大学,九大,最適化理論,グラフ理論"
     />
-    <title>立岩斉明｜Nariaki Tateiwa</title>
+    <title>立岩斉明|Nariaki Tateiwa</title>
     <link href="./style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="./script.js"></script>
-    <!-- <script type="text/javascript" src="./SW.js"></script> -->
   </head>
   <body>
-    <!-- メニューバーのスイッチ -->
-    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
-    <label for="openSidebarMenu" class="sidebarIconToggle">
-      <div class="spinner diagonal part-1"></div>
-      <div class="spinner horizontal"></div>
-      <div class="spinner diagonal part-2"></div>
-    </label>
-    <label for="openSidebarMenu" class="sidebarIconSw"></label>
-    <!-- ナビゲーションバー -->
-    <nav id="menu">
-      <!-- <a class="language">JP/</a
-      ><a href="./en-publications.html" class="language">EN</a> -->
-    </nav>
-    <label for="openSidebarMenu" class="menu-background"></label>
     <!-- ヘッダー -->
-    <header id="header">
-      <div class="centering_parent">
-        <a href="./index.html" id="siteTitle">立岩斉明</a>
-        <a href="./index.html" id="siteTitleEn">Nariaki Tateiwa</a>
-      </div>
-    </header>
+    <header id="header"></header>
     <div id="pageTop"></div>
-    <a href="#pageTop" id="scrolled"><p></p></a>
+    <a href="#pageTop" id="scrolled"
+      ><p class="left"></p>
+      <p class="right"></p
+    ></a>
     <!-- メインコンテンツ -->
-    <div id="main">
-      <p class="updated_at">最終更新 2022年1月22日</p>
-      <h1>Publications</h1>
-      <div id="summarize">
+    <div id="main" class="summarize">
+      <div class="inner">
+        <h1>Publications</h1>
+        <p class="updated_at">最終更新:2022年7月25日</p>
+      </div>
+      <div>
         <h2>査読付き 学術誌論文</h2>
         <ol>
           <li>
@@ -69,6 +54,8 @@
             <a
               class="breake-all"
               href="https://www.sciencedirect.com/science/article/pii/S0968090X21002771"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               https://www.sciencedirect.com/science/article/pii/S0968090X21002771 </a
             >.
@@ -84,12 +71,23 @@
             <a
               class="breake-all"
               href="https://doi.org/10.1007/s41019-019-00112-1"
+              target="_blank"
+              rel="noopener noreferrer"
               >https://doi.org/10.1007/s41019-019-00112-1</a
             >.
           </li>
         </ol>
         <h2>査読付き 学術会議論文</h2>
         <ol>
+          <li>
+            Yamamura, Keiichiro, Haruki Sato, Nariaki Tateiwa, Nozomi Hata, Toru
+            Mitsutake, Issa Oe, Hiroki Ishikura, and Katsuki Fujisawa.
+            "Diversified Adversarial Attacks based on Conjugate Gradient
+            Method". Proceedings of the 39th International Conference on Machine
+            Learning (ICML2022). Proceedings of Machine Learning Research, PMLR,
+            2022, pp. 24872-94,
+            https://proceedings.mlr.press/v162/yamamura22a.html.
+          </li>
           <li>
             Nariaki Tateiwa, Yuji Shinano, Keichiro Yamamura, Akihiro Yoshida,
             Shizuo Kaji, Masaya Yasuda, and Katsuki Fujisawa. "CMAP-LAP:
@@ -207,6 +205,8 @@
             <a
               class="breake-all"
               href="https://www.sci.kyushu-u.ac.jp/koho/qrinews/qrinews_190806.html"
+              target="_blank"
+              rel="noopener noreferrer"
               >数学で導くハイブリッド車の最適な制御 (2019年8月6日)</a
             >.
             トヨタ自動車様との共同研究について九大理学部ニュースに取り上げて頂きました.
