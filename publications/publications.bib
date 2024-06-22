@@ -1,12 +1,31 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Tateiwa at 2022-07-25 00:04:55 +0900 
+%% Created for NariakiTateiwa at 2024-06-22 10:57:46 +0900 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Ishikura2024ASRS,
+	abstract = {We aim to improve the efficiency of a new type of automated storage and retrieval systems (AS/RSs) called multi-control automated storage and retrieval systems (MC-AS/RSs). MC-AS/RSs have multiple storage/retrieval (S/R) machines that operate independently according to storage and retrieval requests. Consequently, MC-AS/RSs can transport loads farther without using human labor, thereby requiring fewer human resources than conventional AS/RSs. However, the structure and control method of AS/RSs are complex because multiple S/R machines must be controlled simultaneously. Therefore, when operating an MC-AS/RS, many factors must be considered, such as the sequence and transport timing. We propose an optimization method using a time-expanded network (TEN) to solve these problems and transport in less time. First, our method models an AS/RS with a TEN to calculate the optimal sequence and conveyance timing while considering the movements of multiple S/R machines. Second, we formulate the operational efficiency of the MC-AS/RS as a problem of minimizing the sum of execution times of requests on the TEN. Finally, we generate the request order necessary for practical use based on the results. The mechanisms implemented to achieve include a generator, optimizer, and scheduler. Our experiments confirm that this method reduces the total execution time of requests compared with other rule-based methods. This method enables us to propose an efficient operation method for AS/RSs with a complex structure of multiple carriers.},
+	author = {Ishikura, Hiroki and Tateiwa, Nariaki and Egi, Shingo and Oe, Issa and Hata, Nozomi and Mitsutake, Toru and Yamamura, Keiichiro and Fujii, Miyu and Fujisawa, Katsuki},
+	date = {2024/01/01},
+	date-added = {2024-06-22 10:57:29 +0900},
+	date-modified = {2024-06-22 10:57:46 +0900},
+	doi = {10.1007/s13160-023-00619-1},
+	id = {Ishikura2024},
+	isbn = {1868-937X},
+	journal = {Japan Journal of Industrial and Applied Mathematics},
+	keywords = {Time-expanded network, Automated storage and retrieval system (AS/RS), Optimization Cyber-physical system, Smart factory},
+	number = {1},
+	pages = {447--474},
+	title = {Scheduling system for automated storage and retrieval system with multiple machines using a time-expanded network},
+	url = {https://doi.org/10.1007/s13160-023-00619-1},
+	volume = {41},
+	year = {2024},
+	bdsk-url-1 = {https://doi.org/10.1007/s13160-023-00619-1}}
 
 @inproceedings{pmlr-v162-yamamura22a,
 	abstract = {Deep learning models are vulnerable to adversarial examples, and adversarial attacks used to generate such examples have attracted considerable research interest. Although existing methods based on the steepest descent have achieved high attack success rates, ill-conditioned problems occasionally reduce their performance. To address this limitation, we utilize the conjugate gradient (CG) method, which is effective for this type of problem, and propose a novel attack algorithm inspired by the CG method, named the Auto Conjugate Gradient (ACG) attack. The results of large-scale evaluation experiments conducted on the latest robust models show that, for most models, ACG was able to find more adversarial examples with fewer iterations than the existing SOTA algorithm Auto-PGD (APGD). We investigated the difference in search performance between ACG and APGD in terms of diversification and intensification, and define a measure called Diversity Index (DI) to quantify the degree of diversity. From the analysis of the diversity using this index, we show that the more diverse search of the proposed method remarkably improves its attack success rate.},
