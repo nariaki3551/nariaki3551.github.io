@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', function () {
   let nav = document.getElementById('nav');
   nav.insertAdjacentHTML(
     'beforeend',
-    '<div id="sns"><p>Follow us</p>' +
+    '<div id="sns"><p>Follow me</p>' +
       '<div class="snsInner">' +
       '<a class="center iconsize snsContener" href="https://github.com/nariaki3551" target="_blank" rel="noopener noreferrer">' +
       '<img src="./image/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png"  class="githubIcon" "alt="githubのアイコン"/>' +
