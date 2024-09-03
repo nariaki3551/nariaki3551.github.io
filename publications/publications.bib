@@ -1,19 +1,44 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for NariakiTateiwa at 2024-06-22 10:57:46 +0900 
+%% Created for NariakiTateiwa at 2024-09-03 19:23:38 +0900 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
 
+@techreport{weko_237592_1,
+	author = {立岩,斉明 and 森田,和孝 and 石田,渉 and 村中,勇介 and 西潟,愛美},
+	date-added = {2024-09-03 19:18:18 +0900},
+	date-modified = {2024-09-03 19:21:05 +0900},
+	institution = {NTT Software Innovation Center, NTT Software Innovation Center, NTT Software Innovation Center／現在， NTT Innovative Devices Corporation, NTT Software Innovation Center, NTT Software Innovation Center},
+	month = {8},
+	number = {31},
+	title = {直接結合網におけるIn-Network AggregationによるAllreduceの高速化},
+	year = {2024}}
+
+@article{Yoshida:2024aa,
+	abstract = {In the daily operation of liquefied petroleum gas service, gas providers visit customers and replace cylinders if the gas is about to run out. The plans should both prevent gas shortages and realize the minimum working time. Existing research has two limitations: the absence of a comprehensive system and the difficulty of solving large-scale problems. In the former limitation, existing research tackled the partial problems of making plans for cylinder replacement, such as planning delivery routes given gas consumption forecast or determining the customers for visiting without obtaining the route. It does not consistently achieve gas shortage prevention and short working hours even when combining individual optimal methods. In the latter limitation, most existing studies have difficulty solving the problem within a reasonable time if there are many customers. This is because they simultaneously determined the customers for visiting and route planning by preparing binary variables representing customer-to-customer travel. In this study, we construct a comprehensive and practical system from gas consumption forecast to determine delivery routes for cylinder replacement with large-scale customers. To address these challenges, our method takes two steps: determining which customers to visit within several days and a single-day route. Moreover, we mitigate gas shortages among customers with poor forecast performance by considering the uncertainty of the gas consumption forecast. A field test involving over 1000 customers in Japan confirmed that the system is operationally viable and capable of preventing gas shortages and realizing short working time.},
+	author = {Yoshida, Akihiro and Sato, Haruki and Uchiumi, Shiori and Tateiwa, Nariaki and Kataoka, Daisuke and Tanaka, Akira and Hata, Nozomi and Yatsushiro, Yousuke and Ide, Ayano and Ishikura, Hiroki and Egi, Shingo and Fuji, Miyu and Kai, Hiroki and Fujisawa, Katsuki},
+	date-added = {2024-09-03 19:10:18 +0900},
+	date-modified = {2024-09-03 19:22:16 +0900},
+	doi = {10.1007/s13160-024-00664-4},
+	id = {Yoshida2024},
+	isbn = {1868-937X},
+	journal = {Japan Journal of Industrial and Applied Mathematics},
+	keywords = {Gas cylinders distribution, Mathematical optimization, Operations research, Transportation, Combinatorial optimization},
+	month = {9},
+	title = {Comprehensive and practical optimal delivery planning system for replacing liquefied petroleum gas cylinders},
+	url = {https://doi.org/10.1007/s13160-024-00664-4},
+	year = {2024},
+	bdsk-url-1 = {https://doi.org/10.1007/s13160-024-00664-4}}
+
 @article{Ishikura2024ASRS,
 	abstract = {We aim to improve the efficiency of a new type of automated storage and retrieval systems (AS/RSs) called multi-control automated storage and retrieval systems (MC-AS/RSs). MC-AS/RSs have multiple storage/retrieval (S/R) machines that operate independently according to storage and retrieval requests. Consequently, MC-AS/RSs can transport loads farther without using human labor, thereby requiring fewer human resources than conventional AS/RSs. However, the structure and control method of AS/RSs are complex because multiple S/R machines must be controlled simultaneously. Therefore, when operating an MC-AS/RS, many factors must be considered, such as the sequence and transport timing. We propose an optimization method using a time-expanded network (TEN) to solve these problems and transport in less time. First, our method models an AS/RS with a TEN to calculate the optimal sequence and conveyance timing while considering the movements of multiple S/R machines. Second, we formulate the operational efficiency of the MC-AS/RS as a problem of minimizing the sum of execution times of requests on the TEN. Finally, we generate the request order necessary for practical use based on the results. The mechanisms implemented to achieve include a generator, optimizer, and scheduler. Our experiments confirm that this method reduces the total execution time of requests compared with other rule-based methods. This method enables us to propose an efficient operation method for AS/RSs with a complex structure of multiple carriers.},
 	author = {Ishikura, Hiroki and Tateiwa, Nariaki and Egi, Shingo and Oe, Issa and Hata, Nozomi and Mitsutake, Toru and Yamamura, Keiichiro and Fujii, Miyu and Fujisawa, Katsuki},
-	date = {2024/01/01},
 	date-added = {2024-06-22 10:57:29 +0900},
-	date-modified = {2024-06-22 10:57:46 +0900},
+	date-modified = {2024-09-03 19:23:01 +0900},
 	doi = {10.1007/s13160-023-00619-1},
 	id = {Ishikura2024},
 	isbn = {1868-937X},
@@ -32,9 +57,9 @@
 	author = {Yamamura, Keiichiro and Sato, Haruki and Tateiwa, Nariaki and Hata, Nozomi and Mitsutake, Toru and Oe, Issa and Ishikura, Hiroki and Fujisawa, Katsuki},
 	booktitle = {Proceedings of the 39th International Conference on Machine Learning},
 	date-added = {2022-07-25 00:04:39 +0900},
-	date-modified = {2022-07-25 00:04:39 +0900},
+	date-modified = {2024-09-03 19:23:38 +0900},
 	editor = {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
-	month = {17--23 Jul},
+	month = {7},
 	pages = {24872--24894},
 	pdf = {https://proceedings.mlr.press/v162/yamamura22a/yamamura22a.pdf},
 	publisher = {PMLR},
@@ -78,14 +103,14 @@
 	abstract = {The studies of browsing behavior have gained increasing attention in web analysis for providing better service. Most of the conventional approaches focus on simple indices such as average dwell time and conversion rate. These indices make similar evaluations to websites even if their features are significantly different. Moreover, such statistical indices are not sensitive to the dynamics of users'interests. In this paper, we propose a new framework for measuring a website's attractiveness that takes into account both the distribution and dynamics of users'interests. Within the framework, we define a new index for the website, called Attractiveness Factor, which evaluates the degree of users'attention. It consists of three procedures: First, we capture the transition of users'interests during browsing by solving a nonnegative matrix factorization and constrained network flow problems. To accommodate multiple types of interests of a user, we applied a soft clustering as opposed to a hard clustering to model attributes of users and websites. Second, for each website, the feature of each cluster is obtained by fitting the dwell time distribution with Weibull distribution. Finally, we calculate Attractiveness Factor of a website by applying the results of clustering and fitting. Attractiveness Factor depends on the distribution of the dwell time of users interested in the website, which reflects the change of interest of users. Numerical experiments with real web access data of Yahoo Japan News are conducted by solving extremely large-scale optimization problems. They show that Attractiveness Factor captures more exceptional information about browsing behavior more effectively than well-used indices. Attractive factors give low ratings to category pages; however, it can assign high ratings to websites that attract many people, such as hot topic news about the 2018 FIFA World Cup, Japan's new imperial era'REIWA,'and North Korea---the United States Hanoi Summit. Moreover, we demonstrate that Attractiveness Factor can detect the tendency of users'attention to each website at a given time interval of the day.},
 	annote = {The studies of browsing behavior have gained increasing attention in web analysis for providing better service. Most of the conventional approaches focus on simple indices such as average dwell time and conversion rate. These indices make similar evaluations to websites even if their features are significantly different. Moreover, such statistical indices are not sensitive to the dynamics of users' interests. In this paper, we propose a new framework for measuring a website's attractiveness that takes into account both the distribution and dynamics of users' interests. Within the framework, we define a new index for the website, called Attractiveness Factor, which evaluates the degree of users' attention. It consists of three procedures: First, we capture the transition of users' interests during browsing by solving a nonnegative matrix factorization and constrained network flow problems. To accommodate multiple types of interests of a user, we applied a soft clustering as opposed to a hard clustering to model attributes of users and websites. Second, for each website, the feature of each cluster is obtained by fitting the dwell time distribution with Weibull distribution. Finally, we calculate Attractiveness Factor of a website by applying the results of clustering and fitting. Attractiveness Factor depends on the distribution of the dwell time of users interested in the website, which reflects the change of interest of users. Numerical experiments with real web access data of Yahoo Japan News are conducted by solving extremely large-scale optimization problems. They show that Attractiveness Factor captures more exceptional information about browsing behavior more effectively than well-used indices. Attractive factors give low ratings to category pages; however, it can assign high ratings to websites that attract many people, such as hot topic news about the 2018 FIFA World Cup, Japan's new imperial era' REIWA,' and North Korea---the United States Hanoi Summit. Moreover, we demonstrate that Attractiveness Factor can detect the tendency of users' attention to each website at a given time interval of the day.},
 	author = {Yoshida, Akihiro and Higurashi, Tatsuru and Maruishi, Masaki and Tateiwa, Nariaki and Hata, Nozomi and Tanaka, Akira and Wakamatsu, Takashi and Nagamatsu, Kenichi and Tajima, Akira and Fujisawa, Katsuki},
-	date = {2020/03/01},
 	date-added = {2022-01-04 21:42:45 +0900},
-	date-modified = {2022-06-25 21:49:44 +0900},
+	date-modified = {2024-09-03 19:22:50 +0900},
 	doi = {10.1007/s41019-019-00112-1},
 	id = {Yoshida2020},
 	isbn = {2364-1541},
 	journal = {Data Science and Engineering},
 	keywords = {User behavior data, Weibull distribution, Network flow problem, Nonnegative matrix factorization, Linear optimization problem},
+	month = {3},
 	number = {1},
 	pages = {48--64},
 	title = {New Performance Index ``Attractiveness Factor''for Evaluating Websites via Obtaining Transition of Users'Interests},
